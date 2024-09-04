@@ -67,3 +67,5 @@ app.use((_, res) => res.status(404).json({ message: "Route Not Found" }));
 mongoose.connect("mongodb+srv://varun:varun123@canidots.zqt8i.mongodb.net/?retryWrites=true&w=majority&appName=canidots")
   .then(() => app.listen(5000))
   .catch(console.error);
+
+module.exports = app;
